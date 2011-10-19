@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd">
+<html>
+	<head>
+		<title>Dice Roller&#8482;</title>
+		<link rel="stylesheet" type="text/css" href="style/style.css"/>
+	</head>
+	<body>
+		<form id="dice_roller" class="form">
+			<div class="row">
+				<span id="rollerIdLabel" class="label">Roller:</span>
+				<input id="rollerId" type="text" class="input"/>
+			</div>
+			<div class="row">
+				<span id="dieTypeLabel" class="label">Die Type:</span>
+				<select id="dType" class="input">
+					<option value="2">2</option>
+					<option value="4">4</option>
+					<option value="6">6</option>
+					<option value="8">8</option>
+					<option value="10">10</option>
+					<option value="12">12</option>
+					<option value="20" selected>20</option>
+					<option value="100">100</option>
+				</select>
+			</div>
+			<div class="row">
+				<span id="dieCountLabel" class="label">Die Count:</span>
+				<input id="dCount" type="text" value="1" class="input"/>
+			</div>
+			<div clas="row">
+				<input id="rollButton" type="button" value="roll" class="button"/>
+			</div>
+		</form>
+		<div id="result" class="result"></div>
+	<script src="script/jquery.min.js"></script>
+	<script src="script/dice_roller.js"></script>
+	</body>
+</html>
